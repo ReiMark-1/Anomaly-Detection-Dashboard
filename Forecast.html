@@ -826,6 +826,307 @@
             padding: 22px 22px 17px;
         }
 
+        .selected-algorithm-card {
+            align-self: start;
+            padding: 18px 22px 15px;
+        }
+
+        .selected-algorithm-card .chart-container {
+            height: 200px;
+            margin-top: 16px;
+        }
+
+        .selected-algorithm-card .chart-note {
+            margin-top: 8px;
+        }
+
+        .why-algorithm-card {
+            min-width: 0;
+            margin-top: 16px;
+            padding: 22px;
+        }
+
+        .why-grid {
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            gap: 12px;
+            margin-top: 20px;
+        }
+
+        .why-item {
+            min-width: 0;
+            padding: 15px;
+            border: 1px solid var(--line-soft);
+            border-radius: 10px;
+            background: var(--canvas);
+        }
+
+        .why-item-top {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .why-number {
+            display: grid;
+            width: 25px;
+            height: 25px;
+            flex: 0 0 auto;
+            place-items: center;
+            border: 1px solid #d9defe;
+            border-radius: 7px;
+            background: var(--brand-50);
+            color: var(--brand-700);
+            font-size: 10px;
+            font-weight: 750;
+        }
+
+        .why-item h4 {
+            margin: 0;
+            color: var(--ink-700);
+            font-size: 11px;
+            font-weight: 700;
+        }
+
+        .why-item p {
+            margin: 8px 0 0;
+            color: var(--ink-500);
+            font-size: 10px;
+            line-height: 1.6;
+        }
+
+        .why-note {
+            display: flex;
+            align-items: center;
+            gap: 7px;
+            margin: 16px 0 0;
+            color: var(--ink-500);
+            font-size: 10px;
+        }
+
+        .why-note .icon {
+            width: 14px;
+            height: 14px;
+            flex: 0 0 auto;
+            color: var(--brand-600);
+        }
+
+        .forecast-card {
+            min-width: 0;
+            padding: 22px;
+        }
+
+        .forecast-toolbar {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .forecast-toolbar h3 {
+            margin: 0;
+            color: var(--ink-900);
+            font-size: 16px;
+            font-weight: 700;
+            letter-spacing: -0.015em;
+        }
+
+        .forecast-toolbar p {
+            max-width: 560px;
+            margin: 5px 0 0;
+            color: var(--ink-500);
+            font-size: 12px;
+            line-height: 1.55;
+        }
+
+        .horizon-tabs {
+            display: flex;
+            flex: 0 0 auto;
+            gap: 4px;
+            padding: 4px;
+            border: 1px solid var(--line);
+            border-radius: 10px;
+            background: var(--canvas);
+        }
+
+        .horizon-tab {
+            min-height: 32px;
+            padding: 0 11px;
+            cursor: pointer;
+            border: 0;
+            border-radius: 7px;
+            background: transparent;
+            color: var(--ink-600);
+            font-size: 10px;
+            font-weight: 700;
+            white-space: nowrap;
+            transition: background-color 160ms ease, color 160ms ease, box-shadow 160ms ease;
+        }
+
+        .horizon-tab:hover {
+            color: var(--ink-900);
+        }
+
+        .horizon-tab.active {
+            background: var(--surface);
+            color: var(--brand-700);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .forecast-summary {
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .forecast-stat {
+            min-width: 0;
+            padding: 13px 14px;
+            border: 1px solid var(--line-soft);
+            border-radius: 10px;
+            background: var(--canvas);
+        }
+
+        .forecast-stat span {
+            display: block;
+            color: var(--ink-500);
+            font-size: 10px;
+            font-weight: 600;
+        }
+
+        .forecast-stat strong {
+            display: block;
+            overflow: hidden;
+            margin-top: 5px;
+            color: var(--ink-900);
+            font-size: 15px;
+            font-weight: 750;
+            letter-spacing: -0.015em;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .forecast-body {
+            display: grid;
+            grid-template-columns: minmax(0, 1.45fr) minmax(290px, 0.75fr);
+            gap: 16px;
+            min-width: 0;
+            margin-top: 16px;
+        }
+
+        .forecast-chart-panel,
+        .forecast-table-panel {
+            min-width: 0;
+            padding: 18px;
+            border: 1px solid var(--line-soft);
+            border-radius: 11px;
+            background: var(--canvas);
+        }
+
+        .forecast-card .forecast-chart {
+            height: 280px;
+            margin-top: 12px;
+        }
+
+        .forecast-chart canvas {
+            max-width: 100%;
+        }
+
+        .forecast-table-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid var(--line);
+        }
+
+        .forecast-table-header h4 {
+            margin: 0;
+            color: var(--ink-700);
+            font-size: 12px;
+            font-weight: 700;
+        }
+
+        .forecast-table-header span {
+            color: var(--ink-400);
+            font-size: 9px;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+        }
+
+        .forecast-list {
+            max-height: 280px;
+            overflow-y: auto;
+        }
+
+        .forecast-row {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) auto auto;
+            align-items: center;
+            gap: 10px;
+            min-height: 42px;
+            border-bottom: 1px solid var(--line-soft);
+            color: var(--ink-600);
+            font-size: 10px;
+        }
+
+        .forecast-row:last-child {
+            border-bottom: 0;
+        }
+
+        .forecast-period {
+            overflow: hidden;
+            font-weight: 600;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .forecast-value {
+            color: var(--ink-700);
+            font-weight: 750;
+            white-space: nowrap;
+        }
+
+        .forecast-status {
+            min-width: 58px;
+            padding: 3px 6px;
+            border-radius: 999px;
+            background: var(--green-100);
+            color: var(--green-700);
+            font-size: 9px;
+            font-weight: 700;
+            text-align: center;
+        }
+
+        .forecast-status.watch {
+            background: var(--amber-100);
+            color: var(--amber-700);
+        }
+
+        .forecast-status.high {
+            background: var(--red-100);
+            color: var(--red-700);
+        }
+
+        .forecast-note {
+            display: flex;
+            align-items: center;
+            gap: 7px;
+            margin: 14px 0 0;
+            color: var(--ink-500);
+            font-size: 10px;
+        }
+
+        .forecast-note .icon {
+            width: 14px;
+            height: 14px;
+            flex: 0 0 auto;
+            color: var(--brand-600);
+        }
+
         .card-header {
             display: flex;
             align-items: flex-start;
@@ -1332,6 +1633,14 @@
                 grid-template-columns: 1fr;
             }
 
+            .why-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+
+            .forecast-body {
+                grid-template-columns: 1fr;
+            }
+
             .chart-container {
                 height: 330px;
             }
@@ -1384,6 +1693,19 @@
                 align-items: flex-start;
                 flex-direction: column;
                 gap: 20px;
+            }
+
+            .forecast-toolbar {
+                flex-direction: column;
+            }
+
+            .horizon-tabs {
+                width: 100%;
+                overflow-x: auto;
+            }
+
+            .horizon-tab {
+                flex: 1;
             }
 
             .driver-layout {
@@ -1455,14 +1777,31 @@
             }
 
             .chart-card,
+            .forecast-card,
             .driver-card,
             .predictors-card,
             .scenario-card {
                 padding: 18px;
             }
 
+            .selected-algorithm-card .chart-container {
+                height: 190px;
+            }
+
+            .forecast-summary {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+
+            .forecast-card .forecast-chart {
+                height: 230px;
+            }
+
             .chart-container {
                 height: 300px;
+            }
+
+            .why-grid {
+                grid-template-columns: 1fr;
             }
 
             .driver-chart {
@@ -1635,6 +1974,10 @@
                     <svg class="icon" aria-hidden="true"><use href="#icon-chart"></use></svg>
                     Forecasting
                 </a>
+                <a class="nav-link" href="#forecast-horizon" data-section="forecast-horizon">
+                    <svg class="icon" aria-hidden="true"><use href="#icon-calendar"></use></svg>
+                    Forecast outlook
+                </a>
                 <a class="nav-link" href="#drivers" data-section="drivers">
                     <svg class="icon" aria-hidden="true"><use href="#icon-layers"></use></svg>
                     Grid drivers
@@ -1800,20 +2143,20 @@
                 </div>
 
                 <div class="chart-grid">
-                    <article class="card chart-card reveal">
+                    <article class="card chart-card selected-algorithm-card reveal">
                         <div class="card-header">
                             <div class="card-title-wrap">
-                                <h3>Forecasting model performance</h3>
-                                <p>Validation accuracy across demand forecasting algorithms</p>
+                                <h3>Selected algorithm</h3>
+                                <p>XGBoost forecast accuracy on the validated holdout period</p>
                             </div>
-                            <span class="badge">Validated</span>
+                            <span class="badge">XGBoost</span>
                         </div>
                         <div class="chart-container">
-                            <canvas id="modelPerformanceChart" role="img" aria-label="Bar chart comparing forecasting model accuracy. XGBoost leads at 92.4 percent.">
-                                XGBoost 92.4%, Random Forest 89.7%, LSTM 88.9%, Gradient Boosting 90.8%.
+                            <canvas id="selectedAlgorithmChart" role="img" aria-label="Bar chart showing XGBoost forecast accuracy of 92.4 percent.">
+                                XGBoost forecast accuracy: 92.4%.
                             </canvas>
                         </div>
-                        <p class="chart-note"><svg class="icon" aria-hidden="true"><use href="#icon-info"></use></svg>Ensemble forecasting is the selected production model based on validation performance.</p>
+                        <p class="chart-note"><svg class="icon" aria-hidden="true"><use href="#icon-info"></use></svg>XGBoost is the only production algorithm used in this dashboard.</p>
                     </article>
 
                     <article class="card chart-card reveal">
@@ -1832,6 +2175,130 @@
                         <p class="chart-note"><svg class="icon" aria-hidden="true"><use href="#icon-info"></use></svg>Stress tiers: low 0–30%, balanced 30–70%, high 70–100%.</p>
                     </article>
                 </div>
+
+                <article class="card why-algorithm-card reveal">
+                    <div class="card-header">
+                        <div class="card-title-wrap">
+                            <h3>Why XGBoost is used</h3>
+                            <p>Model selection rationale for demand forecasting and smart grid optimization</p>
+                        </div>
+                        <span class="badge">Selected model</span>
+                    </div>
+                    <div class="why-grid">
+                        <div class="why-item">
+                            <div class="why-item-top">
+                                <span class="why-number">01</span>
+                                <h4>Accuracy under nonlinear load</h4>
+                            </div>
+                            <p>Captures interactions between weather, calendar, pricing, and network conditions without manual feature engineering.</p>
+                        </div>
+                        <div class="why-item">
+                            <div class="why-item-top">
+                                <span class="why-number">02</span>
+                                <h4>Fast operational inference</h4>
+                            </div>
+                            <p>Produces near-real-time forecasts that can support dispatch, storage, and resource planning workflows.</p>
+                        </div>
+                        <div class="why-item">
+                            <div class="why-item-top">
+                                <span class="why-number">03</span>
+                                <h4>Explainable signals</h4>
+                            </div>
+                            <p>Feature importance makes the drivers behind each forecast visible to grid operators and planners.</p>
+                        </div>
+                        <div class="why-item">
+                            <div class="why-item-top">
+                                <span class="why-number">04</span>
+                                <h4>Resilient to partial telemetry</h4>
+                            </div>
+                            <p>Handles missing values and mixed feature types while remaining stable across changing seasons.</p>
+                        </div>
+                    </div>
+                    <p class="why-note"><svg class="icon" aria-hidden="true"><use href="#icon-info"></use></svg>Only XGBoost is used in this dashboard; no competing algorithm outputs are blended or shown.</p>
+                </article>
+            </section>
+
+            <section class="section" id="forecast-horizon" aria-labelledby="forecast-horizon-heading">
+                <div class="section-header reveal">
+                    <div class="section-title-group">
+                        <span class="section-icon"><svg class="icon" aria-hidden="true"><use href="#icon-calendar"></use></svg></span>
+                        <div class="section-heading">
+                            <h2 id="forecast-horizon-heading">Forward demand outlook</h2>
+                            <p>XGBoost projections across near-term and long-range planning horizons</p>
+                        </div>
+                    </div>
+                    <span class="section-meta">Updated September 25, 2026</span>
+                </div>
+
+                <article class="card forecast-card reveal" id="forecastPanel">
+                    <div class="forecast-toolbar">
+                        <div>
+                            <p class="eyebrow">Prediction horizon</p>
+                            <h3 id="forecastHorizonTitle">Next 7 days</h3>
+                            <p id="forecastHorizonDescription">Daily peak demand forecast for the near-term operating window.</p>
+                        </div>
+                        <div class="horizon-tabs" role="tablist" aria-label="Select forecast horizon">
+                            <button class="horizon-tab active" type="button" role="tab" aria-selected="true" aria-controls="forecastPanel" data-horizon="week">1 week</button>
+                            <button class="horizon-tab" type="button" role="tab" aria-selected="false" aria-controls="forecastPanel" data-horizon="month">1 month</button>
+                            <button class="horizon-tab" type="button" role="tab" aria-selected="false" aria-controls="forecastPanel" data-horizon="quarter">3 months</button>
+                            <button class="horizon-tab" type="button" role="tab" aria-selected="false" aria-controls="forecastPanel" data-horizon="year">1 year</button>
+                        </div>
+                    </div>
+
+                    <div class="forecast-summary" aria-live="polite">
+                        <div class="forecast-stat">
+                            <span>Forecast window</span>
+                            <strong id="forecastWindow">Sep 26 – Oct 02, 2026</strong>
+                        </div>
+                        <div class="forecast-stat">
+                            <span>Average daily peak</span>
+                            <strong id="forecastAverage">1.25 GW</strong>
+                        </div>
+                        <div class="forecast-stat">
+                            <span>Peak demand</span>
+                            <strong id="forecastPeak">1.31 GW</strong>
+                        </div>
+                        <div class="forecast-stat">
+                            <span>Forecast confidence</span>
+                            <strong id="forecastConfidence">92.4%</strong>
+                        </div>
+                    </div>
+
+                    <div class="forecast-body">
+                        <div class="forecast-chart-panel">
+                            <div class="card-header">
+                                <div class="card-title-wrap">
+                                    <h3 id="forecastChartTitle">7-day peak demand outlook</h3>
+                                    <p id="forecastChartSubtitle">Forecast peak demand in gigawatts</p>
+                                </div>
+                                <span class="badge">Live forecast</span>
+                            </div>
+                            <div class="chart-container forecast-chart">
+                                <canvas id="demandForecastChart" role="img" aria-label="Line chart showing XGBoost peak demand forecast for the next seven days.">
+                                    XGBoost peak demand forecast: 1.18, 1.21, 1.24, 1.29, 1.31, 1.27, and 1.22 gigawatts.
+                                </canvas>
+                            </div>
+                        </div>
+
+                        <div class="forecast-table-panel">
+                            <div class="forecast-table-header">
+                                <h4>Period details</h4>
+                                <span>Peak demand</span>
+                            </div>
+                            <div class="forecast-list" id="forecastList" aria-live="polite">
+                                <div class="forecast-row"><span class="forecast-period">Sat, Sep 26</span><strong class="forecast-value">1.18 GW</strong><span class="forecast-status">Balanced</span></div>
+                                <div class="forecast-row"><span class="forecast-period">Sun, Sep 27</span><strong class="forecast-value">1.21 GW</strong><span class="forecast-status">Balanced</span></div>
+                                <div class="forecast-row"><span class="forecast-period">Mon, Sep 28</span><strong class="forecast-value">1.24 GW</strong><span class="forecast-status">Balanced</span></div>
+                                <div class="forecast-row"><span class="forecast-period">Tue, Sep 29</span><strong class="forecast-value">1.29 GW</strong><span class="forecast-status watch">Watch</span></div>
+                                <div class="forecast-row"><span class="forecast-period">Wed, Sep 30</span><strong class="forecast-value">1.31 GW</strong><span class="forecast-status high">High</span></div>
+                                <div class="forecast-row"><span class="forecast-period">Thu, Oct 01</span><strong class="forecast-value">1.27 GW</strong><span class="forecast-status watch">Watch</span></div>
+                                <div class="forecast-row"><span class="forecast-period">Fri, Oct 02</span><strong class="forecast-value">1.22 GW</strong><span class="forecast-status">Balanced</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="forecast-note"><svg class="icon" aria-hidden="true"><use href="#icon-info"></use></svg>Forecasts are generated by XGBoost and shown in peak-demand gigawatts. Confidence reflects the validated model horizon.</p>
+                </article>
             </section>
 
             <section class="section" id="drivers" aria-labelledby="drivers-heading">
@@ -1852,7 +2319,7 @@
                             <h3>What is driving the forecast?</h3>
                             <p>Model-attributed importance for the top ten grid demand signals</p>
                         </div>
-                        <span class="badge">Ensemble v2.1</span>
+                        <span class="badge">XGBoost v2.1</span>
                     </div>
 
                     <div class="driver-layout">
@@ -2101,17 +2568,101 @@
             bodyFont: { size: 11, weight: '500' }
         };
 
-        new Chart(document.getElementById('modelPerformanceChart'), {
+        const forecastData = {
+            week: {
+                title: 'Next 7 days',
+                description: 'Daily peak demand forecast for the near-term operating window.',
+                window: 'Sep 26 – Oct 02, 2026',
+                average: '1.25 GW',
+                peak: '1.31 GW',
+                confidence: '92.4%',
+                chartTitle: '7-day peak demand outlook',
+                chartSubtitle: 'Forecast peak demand in gigawatts',
+                labels: ['Sat 26', 'Sun 27', 'Mon 28', 'Tue 29', 'Wed 30', 'Thu 01', 'Fri 02'],
+                values: [1.18, 1.21, 1.24, 1.29, 1.31, 1.27, 1.22],
+                rows: [
+                    { period: 'Sat, Sep 26', value: '1.18 GW', status: 'Balanced', statusClass: '' },
+                    { period: 'Sun, Sep 27', value: '1.21 GW', status: 'Balanced', statusClass: '' },
+                    { period: 'Mon, Sep 28', value: '1.24 GW', status: 'Balanced', statusClass: '' },
+                    { period: 'Tue, Sep 29', value: '1.29 GW', status: 'Watch', statusClass: 'watch' },
+                    { period: 'Wed, Sep 30', value: '1.31 GW', status: 'High', statusClass: 'high' },
+                    { period: 'Thu, Oct 01', value: '1.27 GW', status: 'Watch', statusClass: 'watch' },
+                    { period: 'Fri, Oct 02', value: '1.22 GW', status: 'Balanced', statusClass: '' }
+                ]
+            },
+            month: {
+                title: 'Next 4 weeks',
+                description: 'Weekly peak demand outlook for near-term capacity planning.',
+                window: 'Sep 26 – Oct 23, 2026',
+                average: '1.30 GW',
+                peak: '1.36 GW',
+                confidence: '91.8%',
+                chartTitle: '4-week peak demand outlook',
+                chartSubtitle: 'Forecast peak demand in gigawatts',
+                labels: ['Week 1', 'Week 2', 'Week 3', 'Week 4'],
+                values: [1.22, 1.28, 1.34, 1.36],
+                rows: [
+                    { period: 'Sep 26 – Oct 02', value: '1.22 GW', status: 'Balanced', statusClass: '' },
+                    { period: 'Oct 03 – Oct 09', value: '1.28 GW', status: 'Watch', statusClass: 'watch' },
+                    { period: 'Oct 10 – Oct 16', value: '1.34 GW', status: 'High', statusClass: 'high' },
+                    { period: 'Oct 17 – Oct 23', value: '1.36 GW', status: 'High', statusClass: 'high' }
+                ]
+            },
+            quarter: {
+                title: 'Next 3 months',
+                description: 'Monthly peak demand outlook for seasonal resource planning.',
+                window: 'Sep 26 – Dec 25, 2026',
+                average: '1.35 GW',
+                peak: '1.42 GW',
+                confidence: '90.7%',
+                chartTitle: '3-month peak demand outlook',
+                chartSubtitle: 'Forecast peak demand in gigawatts',
+                labels: ['Oct 2026', 'Nov 2026', 'Dec 2026'],
+                values: [1.28, 1.35, 1.42],
+                rows: [
+                    { period: 'October 2026', value: '1.28 GW', status: 'Watch', statusClass: 'watch' },
+                    { period: 'November 2026', value: '1.35 GW', status: 'High', statusClass: 'high' },
+                    { period: 'December 2026', value: '1.42 GW', status: 'High', statusClass: 'high' }
+                ]
+            },
+            year: {
+                title: 'Next 12 months',
+                description: 'Monthly peak demand outlook for annual capacity and reserve planning.',
+                window: 'Sep 2026 – Aug 2027',
+                average: '1.35 GW',
+                peak: '1.48 GW',
+                confidence: '88.9%',
+                chartTitle: '12-month peak demand outlook',
+                chartSubtitle: 'Forecast peak demand in gigawatts',
+                labels: ['Oct', 'Nov', 'Dec', 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug'],
+                values: [1.29, 1.35, 1.42, 1.48, 1.31, 1.24, 1.29, 1.36, 1.43, 1.39, 1.32, 1.37],
+                rows: [
+                    { period: 'October 2026', value: '1.29 GW', status: 'Watch', statusClass: 'watch' },
+                    { period: 'November 2026', value: '1.35 GW', status: 'High', statusClass: 'high' },
+                    { period: 'December 2026', value: '1.42 GW', status: 'High', statusClass: 'high' },
+                    { period: 'January 2027', value: '1.48 GW', status: 'High', statusClass: 'high' },
+                    { period: 'February 2027', value: '1.31 GW', status: 'Watch', statusClass: 'watch' },
+                    { period: 'March 2027', value: '1.24 GW', status: 'Balanced', statusClass: '' },
+                    { period: 'April 2027', value: '1.29 GW', status: 'Watch', statusClass: 'watch' },
+                    { period: 'May 2027', value: '1.36 GW', status: 'High', statusClass: 'high' },
+                    { period: 'June 2027', value: '1.43 GW', status: 'High', statusClass: 'high' },
+                    { period: 'July 2027', value: '1.39 GW', status: 'Watch', statusClass: 'watch' },
+                    { period: 'August 2027', value: '1.32 GW', status: 'Watch', statusClass: 'watch' }
+                ]
+            }
+        };
+
+        new Chart(document.getElementById('selectedAlgorithmChart'), {
             type: 'bar',
             data: {
-                labels: ['XGBoost', 'Random Forest', 'LSTM', 'Gradient Boosting'],
+                labels: ['XGBoost'],
                 datasets: [{
                     label: 'Forecast accuracy',
-                    data: [92.4, 89.7, 88.9, 90.8],
-                    backgroundColor: [colors.brand, '#7f9cf5', colors.brandLight, '#a5b4fc'],
+                    data: [92.4],
+                    backgroundColor: [colors.brand],
                     borderRadius: 6,
                     borderSkipped: false,
-                    maxBarThickness: 34
+                    maxBarThickness: 42
                 }]
             },
             options: {
@@ -2260,6 +2811,121 @@
                 }
             }
         });
+
+        const demandForecastChart = new Chart(document.getElementById('demandForecastChart'), {
+            type: 'line',
+            data: {
+                labels: forecastData.week.labels,
+                datasets: [{
+                    label: 'Forecast peak demand',
+                    data: forecastData.week.values,
+                    borderColor: colors.brand,
+                    backgroundColor: 'rgba(79, 70, 229, 0.08)',
+                    borderWidth: 2,
+                    fill: true,
+                    tension: 0.35,
+                    pointRadius: 3,
+                    pointHoverRadius: 5,
+                    pointBackgroundColor: colors.brand,
+                    pointBorderColor: '#ffffff',
+                    pointBorderWidth: 2
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                interaction: { mode: 'index', intersect: false },
+                plugins: {
+                    legend: { display: false },
+                    tooltip: {
+                        ...tooltipStyle,
+                        callbacks: {
+                            label: (context) => `Forecast peak: ${context.parsed.y.toFixed(2)} GW`
+                        }
+                    }
+                },
+                scales: {
+                    x: {
+                        grid: { display: false },
+                        border: { display: false },
+                        ticks: {
+                            color: colors.ink600,
+                            font: { size: 9, weight: '500' },
+                            maxRotation: 0,
+                            autoSkip: true,
+                            maxTicksLimit: 8
+                        }
+                    },
+                    y: {
+                        min: 1,
+                        max: 1.4,
+                        border: { display: false },
+                        grid: { color: colors.grid, drawTicks: false },
+                        ticks: {
+                            color: colors.ink500,
+                            padding: 8,
+                            font: { size: 10 },
+                            stepSize: 0.1,
+                            precision: 1,
+                            callback: (value) => `${value.toFixed(1)} GW`
+                        }
+                    }
+                }
+            }
+        });
+
+        const forecastList = document.getElementById('forecastList');
+        const forecastFields = {
+            title: document.getElementById('forecastHorizonTitle'),
+            description: document.getElementById('forecastHorizonDescription'),
+            window: document.getElementById('forecastWindow'),
+            average: document.getElementById('forecastAverage'),
+            peak: document.getElementById('forecastPeak'),
+            confidence: document.getElementById('forecastConfidence'),
+            chartTitle: document.getElementById('forecastChartTitle'),
+            chartSubtitle: document.getElementById('forecastChartSubtitle')
+        };
+        const horizonTabs = document.querySelectorAll('.horizon-tab');
+
+        function renderForecast(horizon) {
+            const data = forecastData[horizon] || forecastData.week;
+
+            forecastFields.title.textContent = data.title;
+            forecastFields.description.textContent = data.description;
+            forecastFields.window.textContent = data.window;
+            forecastFields.average.textContent = data.average;
+            forecastFields.peak.textContent = data.peak;
+            forecastFields.confidence.textContent = data.confidence;
+            forecastFields.chartTitle.textContent = data.chartTitle;
+            forecastFields.chartSubtitle.textContent = data.chartSubtitle;
+
+            horizonTabs.forEach((tab) => {
+                const isActive = tab.dataset.horizon === horizon;
+                tab.classList.toggle('active', isActive);
+                tab.setAttribute('aria-selected', String(isActive));
+            });
+
+            demandForecastChart.data.labels = data.labels;
+            demandForecastChart.data.datasets[0].data = data.values;
+            demandForecastChart.options.scales.y.min = Math.floor((Math.min(...data.values) - 0.08) * 10) / 10;
+            demandForecastChart.options.scales.y.max = Math.ceil((Math.max(...data.values) + 0.08) * 10) / 10;
+            demandForecastChart.update();
+
+            forecastList.innerHTML = data.rows.map((row) => `
+                <div class="forecast-row">
+                    <span class="forecast-period">${row.period}</span>
+                    <strong class="forecast-value">${row.value}</strong>
+                    <span class="forecast-status ${row.statusClass}">${row.status}</span>
+                </div>
+            `).join('');
+            forecastList.scrollTop = 0;
+        }
+
+        horizonTabs.forEach((tab) => {
+            tab.addEventListener('click', () => renderForecast(tab.dataset.horizon));
+        });
+
+        renderForecast('week');
 
         const exportButton = document.getElementById('exportReport');
         exportButton.addEventListener('click', () => window.print());
